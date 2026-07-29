@@ -21,6 +21,19 @@ This project documents the design, deployment, and security assessment of a Wind
 Unlike a basic installation walkthrough, this project follows the complete lifecycle of enterprise infrastructure deployment—from installing Windows Server and promoting it to a Domain Controller to validating connectivity and performing authenticated LDAP and SMB enumeration using industry-standard tools. Throughout the process, networking, authentication, and service discovery issues were identified and resolved, providing valuable hands-on troubleshooting experience.
 
 The result is a fully functional Active Directory environment capable of supporting centralized identity management while demonstrating foundational skills expected of IT Support, Systems Administration, and entry-level Cybersecurity professionals.
+## 📊 Project Summary
+
+| Category | Details |
+|----------|----------|
+| Platform | Windows Server 2022 |
+| Hypervisor | Parallels Desktop |
+| Domain | lab.local |
+| Workstation | Kali Linux 2026.2 |
+| Active Directory | AD DS |
+| DNS | Microsoft DNS |
+| Total Scenarios | 11 |
+| Enumeration Tools | Nmap, SMBMap, smbclient, ldapsearch |
+| Documentation | GitHub Portfolio |
 
 ---
 
@@ -55,9 +68,13 @@ The result is a fully functional Active Directory environment capable of support
 - [Scenario 9 - LDAP RootDSE Enumeration](#-scenario-9---ldap-rootdse-enumeration)
 - [Scenario 10 - Authenticated LDAP Enumeration](#-scenario-10---authenticated-ldap-enumeration)
 - [Scenario 11 - LDAP User Enumeration](#-scenario-11---ldap-user-enumeration)
-- Skills Demonstrated
-- Lessons Learned
-- References
+- [Technologies Used](#️-technologies-used)
+- [Skills Demonstrated](#-skills-demonstrated)
+- [MITRE ATT&CK Mapping](#-mitre-attck-mapping)
+- [Lessons Learned](#-lessons-learned)
+- [Future Enhancements](#-future-enhancements)
+- [References](#-references)
+- [About Me](#-about-me)
 
 ---
 
@@ -469,7 +486,9 @@ This home lab provides a solid foundation for expanding into more advanced enter
 - Practice PowerShell automation for Active Directory administration.
 - Integrate cloud identity concepts using Microsoft Entra ID (Azure AD).
 
----# 📚 References
+---
+
+# 📚 References
 
 The following resources were used throughout the planning, deployment, troubleshooting, and documentation of this home lab.
 
@@ -499,8 +518,7 @@ The following resources were used throughout the planning, deployment, troublesh
 ## Security Tools
 
 ### Nmap
-
-- https://nmap.org/
+- [Nmap Documentation](https://nmap.org/)
 
 ### SMBMap
 
