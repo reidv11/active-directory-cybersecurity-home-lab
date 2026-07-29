@@ -560,22 +560,25 @@ I enjoy building home labs that allow me to better understand how enterprise env
 # 📂 Repository Structure
 
 ```
-Active-Directory-Cybersecurity-Home-Lab/
+## 📂 Repository Structure
+
+```
+enterprise-active-directory-home-lab/
 │
 ├── README.md
 │
 ├── images/
-│   ├── #1 Windows Server Base Build.png
-│   ├── #2 Active Directory Domain Controller.png
-│   ├── #3 DNS.png
-│   ├── #4 User & Group Administration.png
-│   ├── #5 Kali Linux Installation.png
-│   ├── #6 Connectivity Between Kali and Domain Controller.png
-│   ├── #7 Network Service Enumeration.png
-│   ├── #8 SMB Share Enumeration with SMBMap.png
-│   ├── #9 LDAP RootDSE Enumeration.png
-│   ├── #10 Authenticated LDAP Enumeration.png
-│   └── #11 LDAP User Enumeration.png
+│   ├── 01-windows-server-base-build.png
+│   ├── 02-active-directory-domain-controller.png
+│   ├── 03-dns-configuration.png
+│   ├── 04-user-group-administration.png
+│   ├── 05-kali-linux-installation.png
+│   ├── 06-network-connectivity.png
+│   ├── 07-network-service-enumeration.png
+│   ├── 08-smb-share-enumeration.png
+│   ├── 09-ldap-rootdse-enumeration.png
+│   ├── 10-authenticated-ldap-enumeration.png
+│   └── 11-ldap-user-enumeration.png
 │
 └── LICENSE
 ```
