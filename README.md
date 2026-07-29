@@ -557,12 +557,9 @@ I enjoy building home labs that allow me to better understand how enterprise env
 
 ---
 
-# 📂 Repository Structure
-
-```
 ## 📂 Repository Structure
 
-```
+```text
 enterprise-active-directory-home-lab/
 │
 ├── README.md
