@@ -113,7 +113,7 @@ Deploy a Windows Server 2022 virtual machine to serve as the foundation of the e
 
 ## 📷 Screenshot
 
-![Windows Server Base Build](images/#1 Windows Server Base Build.png)
+![Windows Server Base Build](images/01-windows-server-base-build.png)
 
 ## 💡 Why This Matters
 
@@ -137,7 +137,7 @@ Install Active Directory Domain Services (AD DS) and promote the server into a D
 
 ## 📷 Screenshot
 
-![Active Directory Domain Controller](images/#2 Active Directory Domain Controller.png)
+![Active Directory Domain Controller](images/02-active-directory-domain-controller.png)
 
 ## 💡 Why This Matters
 
@@ -161,7 +161,7 @@ Configure Active Directory Integrated DNS to support authentication and service 
 
 ## 📷 Screenshot
 
-![DNS Configuration](images/#3 DNS.png)
+![DNS Configuration](images/03-dns-configuration.png)
 
 ## 💡 Why This Matters
 
@@ -185,7 +185,7 @@ Create organizational units, user accounts, and security groups to simulate a re
 
 ## 📷 Screenshot
 
-![User & Group Administration](images/#4 User & Group Administration.png)
+![User & Group Administration](images/04-user-group-administration.png)
 
 ## 💡 Why This Matters
 
@@ -208,7 +208,7 @@ Deploy and configure a Kali Linux virtual machine to serve as the dedicated secu
 
 ## 📷 Screenshot
 
-![Kali Linux Installation](images/#5 Kali Linux Installation.png)
+![Kali Linux Installation](images/05-kali-linux-installation.png)
 
 ## 💡 Why This Matters
 
@@ -232,7 +232,7 @@ Verify communication between the Kali Linux workstation and the Windows Server D
 
 ## 📷 Screenshot
 
-![Connectivity Between Kali and Domain Controller](images/#6 Connectivity Between Kali and Domain Controller.png)
+![Network Connectivity](images/06-network-connectivity.png)
 
 ## 💡 Why This Matters
 
@@ -256,7 +256,7 @@ Identify network services exposed by the Domain Controller using Nmap to better 
 
 ## 📷 Screenshot
 
-![Network Service Enumeration](images/#7 Network Service Enumeration.png)
+![Network Service Enumeration](images/07-network-service-enumeration.png)
 
 ## 🔍 Services Discovered
 
@@ -295,7 +295,7 @@ Enumerate available SMB shares using authenticated credentials to identify acces
 
 ## 📷 Screenshot
 
-![SMB Share Enumeration](images/#8 SMB Share Enumeration with SMBMap.png)
+![SMB Share Enumeration](images/08-smb-share-enumeration.png)
 
 ## 🔍 Shares Enumerated
 
@@ -327,7 +327,7 @@ Perform LDAP RootDSE enumeration to retrieve metadata describing the Active Dire
 
 ## 📷 Screenshot
 
-![LDAP RootDSE Enumeration](images/#9 LDAP RootDSE Enumeration.png)
+![LDAP RootDSE Enumeration](images/09-ldap-rootdse-enumeration.png)
 
 ## 💡 Why This Matters
 
@@ -351,7 +351,7 @@ Use authenticated LDAP queries to enumerate Active Directory objects using valid
 
 ## 📷 Screenshot
 
-![Authenticated LDAP Enumeration](images/#10 Authenticated LDAP Enumeration.png)
+![Authenticated LDAP Enumeration](images/10-authenticated-ldap-enumeration.png)
 
 ## 💡 Why This Matters
 
@@ -375,7 +375,7 @@ Enumerate user objects stored within Active Directory using LDAP queries.
 
 ## 📷 Screenshot
 
-![LDAP User Enumeration](images/#11 LDAP User Enumeration.png)
+![LDAP User Enumeration](images/11-ldap-user-enumeration.png)
 
 ## 💡 Why This Matters
 
