@@ -381,7 +381,9 @@ Enumerate user objects stored within Active Directory using LDAP queries.
 
 User enumeration demonstrates how directory information can be retrieved after successful authentication. Understanding what information is exposed—and to whom—is fundamental for identity management, access control, and Active Directory security monitoring.
 
----# 🛠️ Technologies Used
+---
+
+# 🛠️ Technologies Used
 
 | Category | Technologies |
 |-----------|--------------|
