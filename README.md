@@ -492,57 +492,17 @@ This home lab provides a solid foundation for expanding into more advanced enter
 
 The following resources were used throughout the planning, deployment, troubleshooting, and documentation of this home lab.
 
-## Microsoft Documentation
-
-- Microsoft Learn — Windows Server Documentation  
-  https://learn.microsoft.com/windows-server/
-
-- Microsoft Learn — Active Directory Domain Services Overview  
-  https://learn.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview
-
-- Microsoft Learn — DNS Overview  
-  https://learn.microsoft.com/windows-server/networking/dns/dns-top
-
----
-
-## Kali Linux Documentation
-
-- Kali Linux Official Documentation  
-  https://www.kali.org/docs/
-
-- Kali Linux Tools Documentation  
-  https://www.kali.org/tools/
-
----
-
-## Security Tools
-
-### Nmap
+- [Microsoft Learn - Windows Server](https://learn.microsoft.com/windows-server/)
+- [Microsoft Learn - Active Directory Domain Services](https://learn.microsoft.com/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
+- [Microsoft Learn - DNS](https://learn.microsoft.com/windows-server/networking/dns/dns-top)
+- [Kali Linux Documentation](https://www.kali.org/docs/)
+- [Kali Linux Tools](https://www.kali.org/tools/)
 - [Nmap Documentation](https://nmap.org/)
-
-### SMBMap
-
-- https://github.com/ShawnDEvans/smbmap
-
-### smbclient
-
-- https://www.samba.org/
-
-### OpenLDAP Utilities
-
-- https://www.openldap.org/
-
----
-
-## Cybersecurity Frameworks
-
-### MITRE ATT&CK Framework
-
-https://attack.mitre.org/
-
-### NIST Cybersecurity Framework
-
-https://www.nist.gov/cyberframework
+- [SMBMap GitHub](https://github.com/ShawnDEvans/smbmap)
+- [Samba Project](https://www.samba.org/)
+- [OpenLDAP](https://www.openldap.org/)
+- [MITRE ATT&CK](https://attack.mitre.org/)
+- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 
 ---
 
