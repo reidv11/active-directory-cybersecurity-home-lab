@@ -114,13 +114,13 @@ The result is a fully functional Active Directory environment capable of support
 
 ---
 
-# 🚀 Scenario 1 - Windows Server Deployment
+# Scenario 1 - Windows Server Deployment
 
-## 📖 Objective
+## Objective
 
 Deploy a Windows Server 2022 virtual machine to serve as the foundation of the enterprise Active Directory environment.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Installed Windows Server 2022 Evaluation.
 2. Configured initial system settings.
@@ -128,7 +128,7 @@ Deploy a Windows Server 2022 virtual machine to serve as the foundation of the e
 4. Assigned a static IP address.
 5. Verified network communication before Active Directory installation.
 
-## 📷 Screenshot
+## Screenshot
 
 ![Windows Server Base Build](images/01-windows-server-base-build.png)
 
@@ -138,13 +138,13 @@ Every Windows enterprise relies on Domain Controllers to authenticate users, aut
 
 ---
 
-# 🚀 Scenario 2 - Active Directory Domain Controller
+# Scenario 2 - Active Directory Domain Controller
 
-## 📖 Objective
+## Objective
 
 Install Active Directory Domain Services (AD DS) and promote the server into a Domain Controller.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Installed the AD DS server role.
 2. Promoted the server to a Domain Controller.
@@ -152,23 +152,23 @@ Install Active Directory Domain Services (AD DS) and promote the server into a D
 4. Verified successful domain creation.
 5. Confirmed Active Directory services were operational.
 
-## 📷 Screenshot
+## Screenshot
 
 ![Active Directory Domain Controller](images/02-active-directory-domain-controller.png)
 
-## 💡 Why This Matters
+## Why This Matters
 
 Active Directory centralizes authentication, authorization, identity management, and resource access. Understanding how to deploy and manage Domain Controllers is a core skill for Windows administrators and cybersecurity professionals responsible for securing enterprise environments.
 
 ---
 
-# 🚀 Scenario 3 - DNS Configuration
+# Scenario 3 - DNS Configuration
 
-## 📖 Objective
+## Objective
 
 Configure Active Directory Integrated DNS to support authentication and service discovery.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Installed the DNS Server role.
 2. Verified Forward Lookup Zones.
@@ -176,23 +176,23 @@ Configure Active Directory Integrated DNS to support authentication and service 
 4. Validated DNS records.
 5. Ensured domain services were discoverable.
 
-## 📷 Screenshot
+## Screenshot
 
 ![DNS Configuration](images/03-dns-configuration.png)
 
-## 💡 Why This Matters
+## Why This Matters
 
 DNS is one of the most critical services within Active Directory. Kerberos authentication, LDAP queries, Group Policy processing, and domain discovery all depend on accurate DNS records. Understanding this relationship is essential for troubleshooting enterprise Windows environments.
 
 ---
 
-# 🚀 Scenario 4 - User & Group Administration
+# Scenario 4 - User & Group Administration
 
-## 📖 Objective
+## Objective
 
 Create organizational units, user accounts, and security groups to simulate a realistic enterprise directory.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Created Organizational Units.
 2. Created multiple domain users.
@@ -200,22 +200,22 @@ Create organizational units, user accounts, and security groups to simulate a re
 4. Assigned users to groups.
 5. Verified directory organization.
 
-## 📷 Screenshot
+## Screenshot
 
 ![User & Group Administration](images/04-user-group-administration.png)
 
-## 💡 Why This Matters
+## Why This Matters
 
 Proper directory organization simplifies administration, improves scalability, and supports the Principle of Least Privilege by assigning permissions through security groups rather than individual user accounts.
 
 ---
-# 🚀 Scenario 5 - Kali Linux Installation
+# Scenario 5 - Kali Linux Installation
 
-## 📖 Objective
+## Objective
 
 Deploy and configure a Kali Linux virtual machine to serve as the dedicated security workstation for reconnaissance, enumeration, and Active Directory security assessments.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Installed Kali Linux 2026.2 in Parallels Desktop.
 2. Updated system packages and repositories.
@@ -223,23 +223,23 @@ Deploy and configure a Kali Linux virtual machine to serve as the dedicated secu
 4. Installed reconnaissance utilities including **Nmap**, **SMBMap**, **smbclient**, and **ldapsearch**.
 5. Verified network interfaces and IP addressing.
 
-## 📷 Screenshot
+## Screenshot
 
 ![Kali Linux Installation](images/05-kali-linux-installation.png)
 
-## 💡 Why This Matters
+## Why This Matters
 
 Kali Linux is one of the most widely used operating systems for penetration testing and defensive security validation. Configuring a dedicated security workstation mirrors how security analysts and penetration testers perform assessments in enterprise environments while keeping offensive tooling isolated from production systems.
 
 ---
 
-# 🚀 Scenario 6 - Network Connectivity Validation
+# Scenario 6 - Network Connectivity Validation
 
-## 📖 Objective
+## Objective
 
 Verify communication between the Kali Linux workstation and the Windows Server Domain Controller before beginning security enumeration.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Confirmed Host-Only networking configuration.
 2. Verified IP addressing.
@@ -247,23 +247,23 @@ Verify communication between the Kali Linux workstation and the Windows Server D
 4. Confirmed successful communication between both virtual machines.
 5. Resolved networking issues encountered during initial configuration.
 
-## 📷 Screenshot
+## Screenshot
 
 ![Network Connectivity](images/06-network-connectivity.png)
 
-## 💡 Why This Matters
+## Why This Matters
 
 Before any security assessment can begin, connectivity must first be validated. Verifying communication between systems eliminates network misconfiguration as a potential source of later issues and reflects standard troubleshooting practices used by IT and cybersecurity professionals.
 
 ---
 
-# 🚀 Scenario 7 - Network Service Enumeration
+# Scenario 7 - Network Service Enumeration
 
-## 📖 Objective
+## Objective
 
 Identify network services exposed by the Domain Controller using Nmap to better understand the attack surface of the Active Directory environment.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Performed targeted TCP port scanning using Nmap.
 2. Identified Active Directory-related services.
@@ -271,7 +271,7 @@ Identify network services exposed by the Domain Controller using Nmap to better 
 4. Confirmed successful communication with the Domain Controller.
 5. Documented exposed services for further enumeration.
 
-## 📷 Screenshot
+## Screenshot
 
 ![Network Service Enumeration](images/07-network-service-enumeration.png)
 
@@ -290,19 +290,19 @@ Identify network services exposed by the Domain Controller using Nmap to better 
 | 3268 | Global Catalog | Forest-wide Directory Searches |
 | 3269 | Global Catalog SSL | Secure Global Catalog |
 
-## 💡 Why This Matters
+## Why This Matters
 
 Network enumeration is one of the first phases of any security assessment. Identifying exposed services provides visibility into the infrastructure, confirms Active Directory functionality, and establishes the foundation for subsequent authentication and directory enumeration.
 
 ---
 
-# 🚀 Scenario 8 - SMB Share Enumeration
+# Scenario 8 - SMB Share Enumeration
 
-## 📖 Objective
+## Objective
 
 Enumerate available SMB shares using authenticated credentials to identify accessible network resources.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Authenticated to SMB using domain credentials.
 2. Enumerated available shares.
@@ -310,7 +310,7 @@ Enumerate available SMB shares using authenticated credentials to identify acces
 4. Verified access to administrative shares.
 5. Documented available network resources.
 
-## 📷 Screenshot
+## Screenshot
 
 ![SMB Share Enumeration](images/08-smb-share-enumeration.png)
 
@@ -322,19 +322,19 @@ Enumerate available SMB shares using authenticated credentials to identify acces
 - NETLOGON
 - SYSVOL
 
-## 💡 Why This Matters
+## Why This Matters
 
 SMB enumeration demonstrates how authenticated users can discover shared resources throughout a Windows environment. Understanding SMB permissions is essential for both systems administration and cybersecurity because improperly configured shares can expose sensitive information or facilitate lateral movement.
 
 ---
 
-# 🚀 Scenario 9 - LDAP RootDSE Enumeration
+# Scenario 9 - LDAP RootDSE Enumeration
 
-## 📖 Objective
+## Objective
 
 Perform LDAP RootDSE enumeration to retrieve metadata describing the Active Directory environment.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Queried the RootDSE object.
 2. Retrieved naming contexts.
@@ -342,23 +342,23 @@ Perform LDAP RootDSE enumeration to retrieve metadata describing the Active Dire
 4. Verified forest and domain functionality.
 5. Documented Active Directory metadata.
 
-## 📷 Screenshot
+## Screenshot
 
 ![LDAP RootDSE Enumeration](images/09-ldap-rootdse-enumeration.png)
 
-## 💡 Why This Matters
+## Why This Matters
 
 RootDSE contains valuable information describing the capabilities and configuration of an Active Directory environment. Even without privileged access, administrators and security professionals can leverage this information for troubleshooting, inventory, and security assessments.
 
 ---
 
-# 🚀 Scenario 10 - Authenticated LDAP Enumeration
+# Scenario 10 - Authenticated LDAP Enumeration
 
-## 📖 Objective
+## Objective
 
 Use authenticated LDAP queries to enumerate Active Directory objects using valid domain credentials.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Authenticated using the Administrator account.
 2. Connected to the LDAP service.
@@ -366,23 +366,23 @@ Use authenticated LDAP queries to enumerate Active Directory objects using valid
 4. Verified successful authentication.
 5. Retrieved Active Directory object information.
 
-## 📷 Screenshot
+## Screenshot
 
 ![Authenticated LDAP Enumeration](images/10-authenticated-ldap-enumeration.png)
 
-## 💡 Why This Matters
+## Why This Matters
 
 LDAP is the primary protocol used to interact with Active Directory. Understanding how authenticated users query directory services is valuable for administrators managing enterprise environments and security professionals evaluating directory exposure.
 
 ---
 
-# 🚀 Scenario 11 - LDAP User Enumeration
+# Scenario 11 - LDAP User Enumeration
 
-## 📖 Objective
+## Objective
 
 Enumerate user objects stored within Active Directory using LDAP queries.
 
-## 🔧 Actions Performed
+## Actions Performed
 
 1. Queried user objects from Active Directory.
 2. Retrieved Distinguished Names (DNs).
@@ -390,11 +390,11 @@ Enumerate user objects stored within Active Directory using LDAP queries.
 4. Examined security group membership.
 5. Verified successful user enumeration.
 
-## 📷 Screenshot
+## Screenshot
 
 ![LDAP User Enumeration](images/11-ldap-user-enumeration.png)
 
-## 💡 Why This Matters
+## Why This Matters
 
 User enumeration demonstrates how directory information can be retrieved after successful authentication. Understanding what information is exposed—and to whom—is fundamental for identity management, access control, and Active Directory security monitoring.
 
@@ -515,12 +515,6 @@ All systems were built, configured, and tested inside an isolated network under 
 No unauthorized testing, exploitation, persistence, credential attacks, or malicious activities were performed. The objective of this project was to strengthen my understanding of Windows infrastructure, Active Directory, networking, and defensive cybersecurity concepts through hands-on learning.
 
 ---
-
-# 👨‍💻 About Me
-
-Hi, I'm **Virch Reid**, an IT Support professional transitioning into Cybersecurity with a passion for Windows infrastructure, cloud technologies, and enterprise security.
-
-I enjoy building home labs that allow me to better understand how enterprise environments are deployed, administered, secured, and troubleshot. My goal is to continue expanding my technical skills through hands-on projects while pursuing opportunities in IT Support, Systems Administration, Cloud, and Cybersecurity.
 
 ### Current Areas of Focus
 
